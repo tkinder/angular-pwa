@@ -19,9 +19,10 @@ import { NewsapiService } from './services/newsapi.service';
 import { ArticlesJavascriptComponent } from './articles-javascript/articles-javascript.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ArticlesBitcoinComponent } from './bitcoin/articles-bitcoin.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, ArticlesTechnologyComponent, ArticlesJavascriptComponent],
+  declarations: [AppComponent, NavbarComponent, ArticlesTechnologyComponent, ArticlesJavascriptComponent, ArticlesBitcoinComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

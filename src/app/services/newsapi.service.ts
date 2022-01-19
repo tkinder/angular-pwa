@@ -28,4 +28,12 @@ export class NewsapiService {
       )
       .pipe(map((data: any) => data.articles));
   }
+  getArticlesBitcoin(): Observable<any> {
+    return this.http
+      .get(
+        'https://newsapi.org/v2/everything?q=bitcoin&sortBy=latest&apiKey=' +
+          this.api_key
+      )
+      .pipe(map((data: any) => data.articles));
+}
 }
